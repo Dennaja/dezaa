@@ -1,0 +1,561 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deden</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- *******  Font Awesome Icons Link  ******* -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+  <!-- *******  Owl Carousel Links  ******* -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg></a></li>
+      <li><a href="#Blog">Blog</a></li>
+      <li><a href="#Products">Products</a></li>
+      <li><a href="#Resources">Resources</a></li>
+      <li><a href="#Pricing">Pricing</a></li>
+    </ul>
+    <ul>
+      <li><a><svg width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_9_16307)">
+        <path d="M0 2.86525V9.6182C0 11.6749 2.50611 12.7719 4.03763 11.3322L11.3471 4.5792C12.9483 3.1052 11.904 0.5 9.71119 0.5H2.40169C1.07902 0.5 0 1.56265 0 2.86525Z" fill="white"/>
+        <path d="M34.5982 0.5H27.2887C25.1307 0.5 24.0517 3.1052 25.6528 4.5792L32.9623 11.3322C34.4938 12.7376 36.9999 11.6749 36.9999 9.6182V2.86525C36.9999 1.56265 35.9209 0.5 34.5982 0.5Z" fill="white"/>
+        <path d="M20.1533 16.9884L32.9624 28.8489C34.4939 30.2543 37 29.1917 37 27.1349V20.3134C37 19.6621 36.7215 19.0451 36.2342 18.5995L20.1533 3.68814C19.2135 2.83117 17.7865 2.83117 16.8467 3.68814L0.765757 18.5995C0.278457 19.0451 0 19.6621 0 20.3134V27.1349C0 29.1917 2.50611 30.2886 4.03763 28.8489L16.8467 16.9884C17.7865 16.1314 19.2135 16.1314 20.1533 16.9884Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_9_16307">
+        <rect width="37" height="29" fill="white" margin-right="20px" transform="translate(0 0.5)"/>
+        </clipPath>
+        </defs>
+        </svg>
+        whitepace</a></li>
+      <li class="hideOnMobile"><a href="#Blog">Blog</a></li>
+      <li class="hideOnMobile"><a href="#Products">Products</a></li>
+      <li class="hideOnMobile"><a href="#Resources">Resources</a></li>
+      <li class="hideOnMobile"><a href="#Pricing">Pricing</a></li>
+      <li class="buttons-3">Login</li>
+      <li class="buttons-4">Try Whitepace free<i class="fas fa-arrow-right"></i></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" x="0" y="0" viewBox="0 0 464.205 464.205" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M435.192 406.18H29.013C12.989 406.18 0 393.19 0 377.167s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013zM435.192 261.115H29.013C12.989 261.115 0 248.126 0 232.103s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012zM435.192 116.051H29.013C12.989 116.051 0 103.062 0 87.038s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.013-29.014 29.013z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg></a></li>
+    </ul>
+  </nav>
+
+  <section class="hero-section" id="Blog">
+    <div class="heading">
+      <div class="text-box">
+        <h1>Get More Done with whitespace</h1>
+        <p>Project management software that enables your teams to collaborate, plan, 
+          analyze and manage everyday tasks</p>
+          <button class="buttons-1">
+            Try it Now! <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="image-container">
+        <img src="./images/laptop.jpg" alt="Laptop Image">
+      </div>
+    </div>
+  </section>
+
+  <section class="work-management" id="Products">
+    <div class="content-1">
+      <div class="text-block">
+        <div>
+        <h1>Project Management</h1>
+        <p>Images, videos, PDFs and audio files are supported. Create math expressions 
+          and diagrams directly from the app. Take photos with the mobile app and save them to a note.</p>
+        </div>
+        <button class="buttons-1">
+          Try it Now! <i class="fas fa-arrow-right"></i>
+      </button>
+      </div>
+        <div class="image-container">
+          <img src="./images/laptop.jpg" alt="Laptop Image">
+        </div>
+      </div>
+    </div>
+    <div class="content-2">
+      <div class="text-blocks">
+        <div>
+        <h1>Work together</h1>
+        <p>With whitepace, share your notes with your colleagues and collaborate on them.
+          You can also publish a note to the internet and share the URL with others.
+          </p>
+        </div>
+        <button class="buttons-1">
+          Try it Now! <i class="fas fa-arrow-right"></i>
+      </button>
+      </div>
+      <div class="image-container">
+          <img src="./images/Work Together Image.png" alt="Laptop Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="hero-section" id="Resources">
+    <div class="heading">
+      <div class="text-box">
+        <h1>Use as Extension</h1>
+        <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
+        </p>
+        <button class="buttons-1">
+          Try it Now! <i class="fas fa-arrow-right"></i>
+      </button>
+      </div>
+      <div class="image-container">
+        <img src="images/laptop.jpg" alt="Laptop Image">
+      </div>
+    </div>
+  </section>
+  
+  <section class="work-management">
+    <div class="content-5">
+      <div class="text-blocks">
+        <div>
+        <h1>Customise it
+          to your needs</h1>
+        <p>Customise the app with plugins, 
+          custom themes and multiple text editors
+          (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
+          </p>
+        </div>
+        <button class="buttons-1">
+          Try it Now! <i class="fas fa-arrow-right"></i>
+      </button>
+      </div>
+        <div class="image-container">
+          <img src="images/laptop.jpg" alt="Laptop Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="headingg" id="Pricing">
+    <h1>Choose Your Plan</h1>
+    <p>Whether you want to get organized, keep your personal 
+      life on track, or boost workplace productivity, Evernote 
+      has the right plan for you.</p>
+  </section>
+
+  <section class="plans">
+    <div class="slider">
+        <div class="card" id="organization-plan">
+            <h2>Free</h2>
+            <h3>$0</h3>
+            <ul>
+                <li><i class="fas fa-check"></i> Capture ideas and files</li>
+                <li><i class="fas fa-check"></i> Sync unlimited devices</li>
+                <li><i class="fas fa-check"></i> 10 GB monthly uploads</li>
+                <li><i class="fas fa-check"></i> 200 MB max. note size</li>
+                <li><i class="fas fa-check"></i> Customize Home dashboard and access extra widgets</li>
+                <li><i class="fas fa-check"></i> Connect primary Google Calendar account</li>
+                <li><i class="fas fa-check"></i> Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button>Get Started</button>
+        </div>
+        <div class="card active" id="personal-plan">
+            <h2>Personal</h2>
+            <h3>$11.2</h3>
+            <ul>
+                <li><i class="fas fa-check"></i> Keep home and family on track</li>
+                <li><i class="fas fa-check"></i> Sync unlimited devices</li>
+                <li><i class="fas fa-check"></i> 10 GB monthly uploads</li>
+                <li><i class="fas fa-check"></i> 200 MB max. note size</li>
+                <li><i class="fas fa-check"></i> Customize Home dashboard and access extra widgets</li>
+                <li><i class="fas fa-check"></i> Connect primary Google Calendar account</li>
+                <li><i class="fas fa-check"></i> Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <div class="kkk">
+            <button>Get Started</button>
+            </div>
+        </div>
+        <div class="card" id="organization-plan">
+            <h2>Organization</h2>
+            <h3>$49.99</h3>
+            <ul>
+                <li><i class="fas fa-check"></i> Capture ideas and files</li>
+                <li><i class="fas fa-check"></i> Sync unlimited devices</li>
+                <li><i class="fas fa-check"></i> 10 GB monthly uploads</li>
+                <li><i class="fas fa-check"></i> 200 MB max. note size</li>
+                <li><i class="fas fa-check"></i> Customize Home dashboard and access extra widgets</li>
+                <li><i class="fas fa-check"></i> Connect primary Google Calendar account</li>
+                <li><i class="fas fa-check"></i> Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button>Get Started</button>
+        </div>
+    </div>
+</section> 
+
+  <section class="your-work">
+    <div class="headings">
+        <div class="text-blockss">
+            <h1>Your work, everywhere you are</h1>
+            <p>Access your notes from your computer, phone or tablet by synchronising with various services, 
+              including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, 
+              Android and iOS. A terminal app is also available!</p>
+
+              <button class="buttons-2">
+                Try it Now! <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+    </div>
+  </section>
+
+  <section class="work-management">
+    <div class="content-4">
+        <div class="text-blocks">
+            <div>
+                <h1>100% your data</h1>
+                <p>The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) 
+                  to secure your notes and ensure no-one but yourself can access them.
+                </p>
+            </div>
+            <button class="buttons-1">
+                Try it Now! <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="image-container">
+            <img src="./images/Element-1.png" alt="Laptop Image">
+        </div> 
+    </div>
+  </section>
+
+  <section class="our-sponsor">
+    <h1>Our Sponsors</h1>
+    <div class="sponsors">
+      <img src="./images/Apple.png" alt="Apple" srcset="">
+      <img src="./images/Google.png" alt="Google" srcset="">
+      <img src="./images/Microsoft.png" alt="Microsoft" srcset="">
+      <img src="./images/Slack.png" alt="Slack" srcset="">
+    </div>
+  </section>
+
+  <section class="work-management">
+    <div class="content-3">
+        <div class="text-blocks">
+            <div>
+                <h1>Work with Your Favorite Apps Using whitepace</h1>
+                <p>Whitepace teams up with your favorite software. Integrate with over 1000+ 
+                    apps with Zapier to have all the tools you need for your project success.
+                </p>
+            </div>
+            <button class="buttons-1">
+                Try it Now! <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="image-container">
+            <img src="./images/Apps.png" alt="Laptop Image">
+        </div> 
+    </div>
+  </section>
+
+  <div class="testimonials-section">
+	
+    <!-- Section Header Starts -->
+    <header class="section-header">
+      <h1>What Clients Say</h1>
+    </header>
+    <!-- Section Header Ends -->
+  
+    <!-- Owl Carousel Slider Starts -->
+    <div class="owl-carousel owl-theme testimonials-container">
+      <!-- Item1 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Awesome Coding</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <hr>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="./images/image1.jpg">
+            </div>
+            <div class="profile-desc">
+              <span>Person Name</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item1 Ends -->
+  
+        <!-- Item2 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Awesome Coding</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <hr>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="./images/image2.jpg">
+            </div>
+            <div class="profile-desc">
+              <span>Person Name</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item2 Ends -->
+  
+        <!-- Item3 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Awesome Coding</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <hr>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="./images/image3.jpg">
+            </div>
+            <div class="profile-desc">
+              <span>Person Name</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item3 Ends -->
+  
+        <!-- Item4 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Awesome Coding</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <hr>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="./images/image4.jpg">
+            </div>
+            <div class="profile-desc">
+              <span>Person Name</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item4 Ends -->
+  
+        <!-- Item5 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Awesome Coding</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <hr>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="./images/image5.jpg">
+            </div>
+            <div class="profile-desc">
+              <span>Person Name</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item5 Ends -->
+  
+        <!-- Item6 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Awesome Coding</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <hr>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="./images/image6.jpg">
+            </div>
+            <div class="profile-desc">
+              <span>Person Name</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item6 Ends -->
+      
+      <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Awesome Coding</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <hr>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="./images/image6.jpg">
+            </div>
+            <div class="profile-desc">
+              <span>Person Name</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+  
+      <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Awesome Coding</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <hr>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="./images/image6.jpg">
+            </div>
+            <div class="profile-desc">
+              <span>Person Name</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+  
+      <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Awesome Coding</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <hr>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="./images/image6.jpg">
+            </div>
+            <div class="profile-desc">
+              <span>Person Name</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Owl Carousel Slider Ends -->
+  </div>
+
+  <section class="free-trial">
+    <div class="kepala">
+        <div class="tulisan">
+            <h1>Try Whitepace today</h1>
+            <p>Get started for free.
+                Add your whole team as your needs grow.</p>
+        </div>
+        <div class="tombol">
+            <button class="my-button">Try Taskey free<i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="desk">
+            <p>On a big team? Contact sales</p>
+        </div>
+        <div class="logo-icon">
+            <img src="./images/apple-black-logo 2.png" alt="" srcset="">
+            <img src="./images/windows-logo 1.png" alt="" srcset="">
+            <img src="./images/android-logo 1.png" alt="" srcset="">
+        </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer-btm">
+        <div class="tems">
+          <p>English</p>
+          <p>Terms & privacy</p>
+          <p>Security</p>
+          <p>Status</p>
+          <p>©2021 Whitepace LLC.</p>
+        </div>
+        <div class="sosial-icon">
+          <img src="./images/Facebook.png">
+          <img src="./images/Linkedin.png">
+          <img src="./images/Twitter.png">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--   *****   JQuery Link   *****   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!--   *****   Owl Carousel js Link  *****  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!--   *****   Link To Custom Script File   *****   -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
